@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<h1>Contacto</h1>
+<form asp-controller="Home" asp-action="Contacto">
+    <div class="mb-3">
+        <label for="nombre"
+               class="col-form-label-sm">
+            Nombre
+        </label>
+        <input type="text"
+               class="form-control"
+               id="nombre"
+               name="nombre"
+               placeholder="Escribe tu nombre"
+               value="" />
+    </div>
+    <div class="mb-3">
+        <label for="email"
+               class="col-form-label-sm">
+            Email
+        </label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               name="email"
+               placeholder="Escribe tu email"
+               value="" />
+    </div>
+    <div class="mb-3">
+        <label class="col-form-label-sm"
+               for="mensaje">
+            Mensaje
+        </label>
+        <textarea class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="3">
+        </textarea>
+    </div>
+    <button type="submit"
+            class="btn btn-primary">
+        Enviar
+    </button>
+</form>
